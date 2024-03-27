@@ -12,8 +12,13 @@
 		E212BD8E2BB30B3B00F4CA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E212BD8D2BB30B3B00F4CA3B /* Assets.xcassets */; };
 		E212BD912BB30B3B00F4CA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E212BD8F2BB30B3B00F4CA3B /* LaunchScreen.storyboard */; };
 		E212BD9C2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BD9B2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift */; };
-		E212BDBC2BB314B100F4CA3B /* MoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BDBB2BB314B100F4CA3B /* MoviesListViewController.swift */; };
+		E212BDBC2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BDBB2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift */; };
 		E212BDBE2BB314D500F4CA3B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BDBD2BB314D500F4CA3B /* MovieDetailsViewController.swift */; };
+		E27F09362BB3682200C065D1 /* PopularMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F09352BB3682200C065D1 /* PopularMoviesListViewController.swift */; };
+		E27F09382BB3684300C065D1 /* UpcomingMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F09372BB3684300C065D1 /* UpcomingMoviesListViewController.swift */; };
+		E27F093C2BB3715200C065D1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F093B2BB3715200C065D1 /* Movie.swift */; };
+		E27F093E2BB3746300C065D1 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F093D2BB3746300C065D1 /* MovieService.swift */; };
+		E27F09412BB3BEEC00C065D1 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +48,13 @@
 		E212BD972BB30B3B00F4CA3B /* banquemisr.challenge05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banquemisr.challenge05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E212BD9B2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = banquemisr_challenge05Tests.swift; sourceTree = "<group>"; };
 		E212BDA12BB30B3B00F4CA3B /* banquemisr.challenge05UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banquemisr.challenge05UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E212BDBB2BB314B100F4CA3B /* MoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewController.swift; sourceTree = "<group>"; };
+		E212BDBB2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMoviesListViewController.swift; sourceTree = "<group>"; };
 		E212BDBD2BB314D500F4CA3B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		E27F09352BB3682200C065D1 /* PopularMoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesListViewController.swift; sourceTree = "<group>"; };
+		E27F09372BB3684300C065D1 /* UpcomingMoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMoviesListViewController.swift; sourceTree = "<group>"; };
+		E27F093B2BB3715200C065D1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E27F093D2BB3746300C065D1 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,7 @@
 		E212BD832BB30B3900F4CA3B /* banquemisr.challenge05 */ = {
 			isa = PBXGroup;
 			children = (
+				E27F093F2BB3BED800C065D1 /* Utilities */,
 				E212BDB62BB3134200F4CA3B /* Model */,
 				E212BDB72BB3135500F4CA3B /* ViewModel */,
 				E212BDB92BB313B300F4CA3B /* Services */,
@@ -115,6 +126,7 @@
 		E212BDB62BB3134200F4CA3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E27F093B2BB3715200C065D1 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,7 +141,9 @@
 		E212BDB82BB3136900F4CA3B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E212BDBB2BB314B100F4CA3B /* MoviesListViewController.swift */,
+				E212BDBB2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift */,
+				E27F09352BB3682200C065D1 /* PopularMoviesListViewController.swift */,
+				E27F09372BB3684300C065D1 /* UpcomingMoviesListViewController.swift */,
 				E212BDBD2BB314D500F4CA3B /* MovieDetailsViewController.swift */,
 			);
 			path = ViewController;
@@ -138,6 +152,7 @@
 		E212BDB92BB313B300F4CA3B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E27F093D2BB3746300C065D1 /* MovieService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -151,6 +166,14 @@
 				E212BD8F2BB30B3B00F4CA3B /* LaunchScreen.storyboard */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		E27F093F2BB3BED800C065D1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27F093C2BB3715200C065D1 /* Movie.swift in Sources */,
+				E27F09362BB3682200C065D1 /* PopularMoviesListViewController.swift in Sources */,
+				E27F09382BB3684300C065D1 /* UpcomingMoviesListViewController.swift in Sources */,
 				E212BDBE2BB314D500F4CA3B /* MovieDetailsViewController.swift in Sources */,
 				E212BD852BB30B3900F4CA3B /* AppDelegate.swift in Sources */,
+				E27F09412BB3BEEC00C065D1 /* ErrorMessage.swift in Sources */,
 				E212BD872BB30B3900F4CA3B /* SceneDelegate.swift in Sources */,
-				E212BDBC2BB314B100F4CA3B /* MoviesListViewController.swift in Sources */,
+				E27F093E2BB3746300C065D1 /* MovieService.swift in Sources */,
+				E212BDBC2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +492,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,7 +522,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
