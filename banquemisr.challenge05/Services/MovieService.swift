@@ -17,7 +17,7 @@ class MovieService{
     private let baseUrl = "https://api.themoviedb.org/3/movie/"
     private let apiKey = "95a89943de5af0ccb83f6a10a3c30c21"
 
-    func getNowPlayingMoviesList(currentTab: String,completion: @escaping (Result<[Movie], ErrorMessage>) -> Void){
+    func getMoviesList(currentTab: String,completion: @escaping (Result<[Movie], ErrorMessage>) -> Void){
         
         let urlString = baseUrl + "\(currentTab)?api_key=\(apiKey)"
         
