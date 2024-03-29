@@ -26,11 +26,11 @@ class customBodyLabel: UILabel {
     
     
     private func configure(){
-        textColor = .secondaryLabel //.label
+        textColor = .secondaryLabel 
         font = UIFont.preferredFont(forTextStyle: .body)
-        adjustsFontSizeToFitWidth = true
+        adjustsFontSizeToFitWidth = false
         minimumScaleFactor = 0.75
-        lineBreakMode = .byWordWrapping
+        lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
 }

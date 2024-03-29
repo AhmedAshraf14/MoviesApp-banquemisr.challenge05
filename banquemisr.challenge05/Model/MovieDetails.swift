@@ -14,7 +14,7 @@ struct MovieDetails: Codable{
     let genres: [Genre]
     let overview: String
     let posterPath: String?
-    let runtime: Int?
+    let runtime: Int
     let voteAverage: Double
     let revenue: Int
 }

@@ -43,7 +43,6 @@ class MoviesListViewModel{
                 completion(nil)
             }
         }
-        
     }
     
     func numberOfMovies() -> Int {
@@ -52,5 +51,12 @@ class MoviesListViewModel{
     
     func movie(at index: Int) -> Movie{
         return movies[index]
+    }
+    
+    func didSelectMovie(at index: Int) -> Int? {
+        guard index >= 0 && index < movies.count else {
+            return nil
+        }
+        return movies[index].id
     }
 }

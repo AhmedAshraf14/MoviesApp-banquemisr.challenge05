@@ -74,7 +74,7 @@ class MovieService{
     }
     
     func getMovieDetails(for movieId: Int, completion: @escaping (Result<MovieDetails,ErrorMessage>) -> Void){
-        guard let url = URL(string: baseUrl + "\(movieId)" + apiKey) else {
+        guard let url = URL(string: baseUrl + "\(movieId)?api_key=" + apiKey) else {
             completion(.failure(.invalidRequest))
             return
         }

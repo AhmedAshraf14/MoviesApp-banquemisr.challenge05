@@ -27,6 +27,7 @@ class UpcomingMoviesListViewController: UIViewController {
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
         view.addSubview(collectionView)
+        collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .systemGray6
         collectionView.register(MovieCell.self, forCellWithReuseIdentifier: "MovieCell")
@@ -45,5 +46,17 @@ extension UpcomingMoviesListViewController: UICollectionViewDataSource{
         cell.set(with: movie)
         
         return cell
+    }
+}
+
+extension UpcomingMoviesListViewController: UICollectionViewDelegate{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let movieId = moviesListViewModel.didSelectMovie(at: indexPath.item) else { return }
+        
+        let movieDetailsViewModel = MovieDetailsViewModel(with: movieId)
+        let movieDetailsVC = MovieDetailsViewController()
+        movieDetailsVC.movieDetailsViewModel = movieDetailsViewModel
+
+        navigationController?.pushViewController(movieDetailsVC, animated: true)
     }
 }
