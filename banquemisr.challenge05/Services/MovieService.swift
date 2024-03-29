@@ -5,7 +5,7 @@
 //  Created by Ahmed Ashraf on 26/03/2024.
 //
 
-import Foundation
+import UIKit
 
 
 class MovieService{
@@ -47,6 +47,27 @@ class MovieService{
                 return
             }
             completion(.success(movies))
+        }
+        task.resume()
+    }
+    
+    func downloadImage(from posterPath: String, completion: @escaping (Result<UIImage?, Error>) -> Void){
+        let baseUrl = "https://image.tmdb.org/t/p/"
+        let posterSize = "w500"
+        
+        guard let url = URL(string: baseUrl + posterSize + posterPath) else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let _ = self else { return }
+            
+            
+            if let _ = error{ return }
+            guard let response = response as? HTTPURLResponse , response.statusCode == 200 else{ return }
+            guard let data = data else { return }
+            
+            guard let image = UIImage(data: data) else { return }
+            completion(.success(image))
+            
         }
         task.resume()
     }

@@ -9,8 +9,41 @@ import UIKit
 
 class UpcomingMoviesListViewController: UIViewController {
 
+    var collectionView : UICollectionView!
+    var moviesListViewModel = MoviesListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureCollectionView()
+        
+        moviesListViewModel.fetchMoviesList(currentTab: "upcoming")
+        moviesListViewModel.reloadCollectionView = { [weak self] in
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
+    }
+    
+    func configureCollectionView() {
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createTwoColumnFlowLayout(in: view))
+        view.addSubview(collectionView)
+        collectionView.dataSource = self
+        collectionView.backgroundColor = .systemGray6
+        collectionView.register(MovieCell.self, forCellWithReuseIdentifier: "MovieCell")
+    }
+    
+}
 
+extension UpcomingMoviesListViewController: UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return moviesListViewModel.numberOfMovies()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieCell", for: indexPath) as! MovieCell
+        let movie = moviesListViewModel.movie(at: indexPath.item)
+        cell.set(with: movie)
+        
+        return cell
     }
 }

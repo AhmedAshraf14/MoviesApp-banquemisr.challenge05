@@ -24,6 +24,7 @@ class customBodyLabel: UILabel {
         configure()
     }
     
+    
     private func configure(){
         textColor = .secondaryLabel //.label
         font = UIFont.preferredFont(forTextStyle: .body)

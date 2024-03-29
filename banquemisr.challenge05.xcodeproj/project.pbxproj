@@ -19,6 +19,7 @@
 		E27F093C2BB3715200C065D1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F093B2BB3715200C065D1 /* Movie.swift */; };
 		E27F093E2BB3746300C065D1 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F093D2BB3746300C065D1 /* MovieService.swift */; };
 		E27F09412BB3BEEC00C065D1 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */; };
+		E2826F722BB6363B0076425F /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2826F712BB6363B0076425F /* UIHelper.swift */; };
 		E29534CE2BB5BEC800CEB3FE /* customTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534CD2BB5BEC800CEB3FE /* customTitleLabel.swift */; };
 		E29534D02BB5C1C000CEB3FE /* customBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534CF2BB5C1C000CEB3FE /* customBodyLabel.swift */; };
 		E29534D22BB5C2BB00CEB3FE /* customSecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534D12BB5C2BB00CEB3FE /* customSecondaryLabel.swift */; };
@@ -61,6 +62,7 @@
 		E27F093B2BB3715200C065D1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E27F093D2BB3746300C065D1 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		E2826F712BB6363B0076425F /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		E29534CD2BB5BEC800CEB3FE /* customTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTitleLabel.swift; sourceTree = "<group>"; };
 		E29534CF2BB5C1C000CEB3FE /* customBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBodyLabel.swift; sourceTree = "<group>"; };
 		E29534D12BB5C2BB00CEB3FE /* customSecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customSecondaryLabel.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E27F09402BB3BEEC00C065D1 /* ErrorMessage.swift */,
+				E2826F712BB6363B0076425F /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				E27F09382BB3684300C065D1 /* UpcomingMoviesListViewController.swift in Sources */,
 				E2B28EA32BB5AEDC00FB64F3 /* MovieCell.swift in Sources */,
 				E212BDBE2BB314D500F4CA3B /* MovieDetailsViewController.swift in Sources */,
+				E2826F722BB6363B0076425F /* UIHelper.swift in Sources */,
 				E212BD852BB30B3900F4CA3B /* AppDelegate.swift in Sources */,
 				E2B28EA02BB5ABFC00FB64F3 /* MoviesListViewModel.swift in Sources */,
 				E29534D02BB5C1C000CEB3FE /* customBodyLabel.swift in Sources */,

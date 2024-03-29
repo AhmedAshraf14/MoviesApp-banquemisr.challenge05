@@ -8,7 +8,7 @@
 import UIKit
 
 class customMovieImageView: UIImageView {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -20,7 +20,7 @@ class customMovieImageView: UIImageView {
     
     
     private func configure(){
-        layer.cornerRadius = 10
+        layer.cornerRadius = 5
         clipsToBounds = true
         translatesAutoresizingMaskIntoConstraints = false
     }
