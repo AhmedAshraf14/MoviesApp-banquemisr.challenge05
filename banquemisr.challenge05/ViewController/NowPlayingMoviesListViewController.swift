@@ -15,7 +15,6 @@ class NowPlayingMoviesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
-        
         moviesListViewModel.fetchMoviesList(currentTab: "now_playing")
         moviesListViewModel.reloadCollectionView = { [weak self] in
             DispatchQueue.main.async {
@@ -46,4 +45,6 @@ extension NowPlayingMoviesListViewController: UICollectionViewDataSource{
         
         return cell
     }
+    
 }
+

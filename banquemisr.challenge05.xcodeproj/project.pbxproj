@@ -26,6 +26,7 @@
 		E2B28EA02BB5ABFC00FB64F3 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28E9F2BB5ABFC00FB64F3 /* MoviesListViewModel.swift */; };
 		E2B28EA32BB5AEDC00FB64F3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28EA22BB5AEDC00FB64F3 /* MovieCell.swift */; };
 		E2B28EA52BB5B40400FB64F3 /* customMovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28EA42BB5B40400FB64F3 /* customMovieImageView.swift */; };
+		E2E8BAEF2BB6FA37002117A4 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8BAEE2BB6FA37002117A4 /* MovieDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		E2B28E9F2BB5ABFC00FB64F3 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 		E2B28EA22BB5AEDC00FB64F3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		E2B28EA42BB5B40400FB64F3 /* customMovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customMovieImageView.swift; sourceTree = "<group>"; };
+		E2E8BAEE2BB6FA37002117A4 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				E27F093B2BB3715200C065D1 /* Movie.swift */,
+				E2E8BAEE2BB6FA37002117A4 /* MovieDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29534CE2BB5BEC800CEB3FE /* customTitleLabel.swift in Sources */,
+				E2E8BAEF2BB6FA37002117A4 /* MovieDetails.swift in Sources */,
 				E27F093C2BB3715200C065D1 /* Movie.swift in Sources */,
 				E2B28EA52BB5B40400FB64F3 /* customMovieImageView.swift in Sources */,
 				E27F09362BB3682200C065D1 /* PopularMoviesListViewController.swift in Sources */,
