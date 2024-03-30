@@ -11,7 +11,6 @@
 		E212BD872BB30B3900F4CA3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BD862BB30B3900F4CA3B /* SceneDelegate.swift */; };
 		E212BD8E2BB30B3B00F4CA3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E212BD8D2BB30B3B00F4CA3B /* Assets.xcassets */; };
 		E212BD912BB30B3B00F4CA3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E212BD8F2BB30B3B00F4CA3B /* LaunchScreen.storyboard */; };
-		E212BD9C2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BD9B2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift */; };
 		E212BDBC2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BDBB2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift */; };
 		E212BDBE2BB314D500F4CA3B /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212BDBD2BB314D500F4CA3B /* MovieDetailsViewController.swift */; };
 		E27F09362BB3682200C065D1 /* PopularMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27F09352BB3682200C065D1 /* PopularMoviesListViewController.swift */; };
@@ -23,6 +22,7 @@
 		E29534CE2BB5BEC800CEB3FE /* customTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534CD2BB5BEC800CEB3FE /* customTitleLabel.swift */; };
 		E29534D02BB5C1C000CEB3FE /* customBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534CF2BB5C1C000CEB3FE /* customBodyLabel.swift */; };
 		E29534D22BB5C2BB00CEB3FE /* customSecondaryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29534D12BB5C2BB00CEB3FE /* customSecondaryLabel.swift */; };
+		E2A5DF792BB7B5A100071F63 /* MovieServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5DF782BB7B5A100071F63 /* MovieServiceTests.swift */; };
 		E2B28EA02BB5ABFC00FB64F3 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28E9F2BB5ABFC00FB64F3 /* MoviesListViewModel.swift */; };
 		E2B28EA32BB5AEDC00FB64F3 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28EA22BB5AEDC00FB64F3 /* MovieCell.swift */; };
 		E2B28EA52BB5B40400FB64F3 /* customMovieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B28EA42BB5B40400FB64F3 /* customMovieImageView.swift */; };
@@ -32,14 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E212BD982BB30B3B00F4CA3B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E212BD792BB30B3900F4CA3B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E212BD802BB30B3900F4CA3B;
-			remoteInfo = banquemisr.challenge05;
-		};
-		E212BDA22BB30B3B00F4CA3B /* PBXContainerItemProxy */ = {
+		E2A5DF712BB7B2F300071F63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E212BD792BB30B3900F4CA3B /* Project object */;
 			proxyType = 1;
@@ -55,9 +48,6 @@
 		E212BD8D2BB30B3B00F4CA3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E212BD902BB30B3B00F4CA3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E212BD922BB30B3B00F4CA3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E212BD972BB30B3B00F4CA3B /* banquemisr.challenge05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banquemisr.challenge05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E212BD9B2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = banquemisr_challenge05Tests.swift; sourceTree = "<group>"; };
-		E212BDA12BB30B3B00F4CA3B /* banquemisr.challenge05UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banquemisr.challenge05UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E212BDBB2BB314B100F4CA3B /* NowPlayingMoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingMoviesListViewController.swift; sourceTree = "<group>"; };
 		E212BDBD2BB314D500F4CA3B /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		E27F09352BB3682200C065D1 /* PopularMoviesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviesListViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +59,8 @@
 		E29534CD2BB5BEC800CEB3FE /* customTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTitleLabel.swift; sourceTree = "<group>"; };
 		E29534CF2BB5C1C000CEB3FE /* customBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customBodyLabel.swift; sourceTree = "<group>"; };
 		E29534D12BB5C2BB00CEB3FE /* customSecondaryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customSecondaryLabel.swift; sourceTree = "<group>"; };
+		E2A5DF6D2BB7B2F300071F63 /* banquemisr.challenge05Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = banquemisr.challenge05Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A5DF782BB7B5A100071F63 /* MovieServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServiceTests.swift; sourceTree = "<group>"; };
 		E2B28E9F2BB5ABFC00FB64F3 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 		E2B28EA22BB5AEDC00FB64F3 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		E2B28EA42BB5B40400FB64F3 /* customMovieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customMovieImageView.swift; sourceTree = "<group>"; };
@@ -85,14 +77,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E212BD942BB30B3B00F4CA3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E212BD9E2BB30B3B00F4CA3B /* Frameworks */ = {
+		E2A5DF6A2BB7B2F300071F63 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				E212BD832BB30B3900F4CA3B /* banquemisr.challenge05 */,
-				E212BD9A2BB30B3B00F4CA3B /* banquemisr.challenge05Tests */,
+				E2A5DF6E2BB7B2F300071F63 /* banquemisr.challenge05Tests */,
 				E212BD822BB30B3900F4CA3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,8 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E212BD812BB30B3900F4CA3B /* banquemisr.challenge05.app */,
-				E212BD972BB30B3B00F4CA3B /* banquemisr.challenge05Tests.xctest */,
-				E212BDA12BB30B3B00F4CA3B /* banquemisr.challenge05UITests.xctest */,
+				E2A5DF6D2BB7B2F300071F63 /* banquemisr.challenge05Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,14 +119,6 @@
 				E212BD922BB30B3B00F4CA3B /* Info.plist */,
 			);
 			path = banquemisr.challenge05;
-			sourceTree = "<group>";
-		};
-		E212BD9A2BB30B3B00F4CA3B /* banquemisr.challenge05Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E212BD9B2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift */,
-			);
-			path = banquemisr.challenge05Tests;
 			sourceTree = "<group>";
 		};
 		E212BDB62BB3134200F4CA3B /* Model */ = {
@@ -212,6 +188,14 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
+		E2A5DF6E2BB7B2F300071F63 /* banquemisr.challenge05Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5DF782BB7B5A100071F63 /* MovieServiceTests.swift */,
+			);
+			path = banquemisr.challenge05Tests;
+			sourceTree = "<group>";
+		};
 		E2B28EA12BB5AEA200FB64F3 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,41 +234,23 @@
 			productReference = E212BD812BB30B3900F4CA3B /* banquemisr.challenge05.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E212BD962BB30B3B00F4CA3B /* banquemisr.challenge05Tests */ = {
+		E2A5DF6C2BB7B2F300071F63 /* banquemisr.challenge05Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E212BDAE2BB30B3B00F4CA3B /* Build configuration list for PBXNativeTarget "banquemisr.challenge05Tests" */;
+			buildConfigurationList = E2A5DF732BB7B2F300071F63 /* Build configuration list for PBXNativeTarget "banquemisr.challenge05Tests" */;
 			buildPhases = (
-				E212BD932BB30B3B00F4CA3B /* Sources */,
-				E212BD942BB30B3B00F4CA3B /* Frameworks */,
-				E212BD952BB30B3B00F4CA3B /* Resources */,
+				E2A5DF692BB7B2F300071F63 /* Sources */,
+				E2A5DF6A2BB7B2F300071F63 /* Frameworks */,
+				E2A5DF6B2BB7B2F300071F63 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E212BD992BB30B3B00F4CA3B /* PBXTargetDependency */,
+				E2A5DF722BB7B2F300071F63 /* PBXTargetDependency */,
 			);
 			name = banquemisr.challenge05Tests;
 			productName = banquemisr.challenge05Tests;
-			productReference = E212BD972BB30B3B00F4CA3B /* banquemisr.challenge05Tests.xctest */;
+			productReference = E2A5DF6D2BB7B2F300071F63 /* banquemisr.challenge05Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E212BDA02BB30B3B00F4CA3B /* banquemisr.challenge05UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E212BDB12BB30B3B00F4CA3B /* Build configuration list for PBXNativeTarget "banquemisr.challenge05UITests" */;
-			buildPhases = (
-				E212BD9D2BB30B3B00F4CA3B /* Sources */,
-				E212BD9E2BB30B3B00F4CA3B /* Frameworks */,
-				E212BD9F2BB30B3B00F4CA3B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E212BDA32BB30B3B00F4CA3B /* PBXTargetDependency */,
-			);
-			name = banquemisr.challenge05UITests;
-			productName = banquemisr.challenge05UITests;
-			productReference = E212BDA12BB30B3B00F4CA3B /* banquemisr.challenge05UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -299,12 +265,9 @@
 					E212BD802BB30B3900F4CA3B = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
-					E212BD962BB30B3B00F4CA3B = {
+					E2A5DF6C2BB7B2F300071F63 = {
 						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = E212BD802BB30B3900F4CA3B;
-					};
-					E212BDA02BB30B3B00F4CA3B = {
-						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 						TestTargetID = E212BD802BB30B3900F4CA3B;
 					};
 				};
@@ -323,8 +286,7 @@
 			projectRoot = "";
 			targets = (
 				E212BD802BB30B3900F4CA3B /* banquemisr.challenge05 */,
-				E212BD962BB30B3B00F4CA3B /* banquemisr.challenge05Tests */,
-				E212BDA02BB30B3B00F4CA3B /* banquemisr.challenge05UITests */,
+				E2A5DF6C2BB7B2F300071F63 /* banquemisr.challenge05Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,14 +301,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E212BD952BB30B3B00F4CA3B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E212BD9F2BB30B3B00F4CA3B /* Resources */ = {
+		E2A5DF6B2BB7B2F300071F63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,33 +337,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E212BD932BB30B3B00F4CA3B /* Sources */ = {
+		E2A5DF692BB7B2F300071F63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E212BD9C2BB30B3B00F4CA3B /* banquemisr_challenge05Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E212BD9D2BB30B3B00F4CA3B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E2A5DF792BB7B5A100071F63 /* MovieServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E212BD992BB30B3B00F4CA3B /* PBXTargetDependency */ = {
+		E2A5DF722BB7B2F300071F63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E212BD802BB30B3900F4CA3B /* banquemisr.challenge05 */;
-			targetProxy = E212BD982BB30B3B00F4CA3B /* PBXContainerItemProxy */;
-		};
-		E212BDA32BB30B3B00F4CA3B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E212BD802BB30B3900F4CA3B /* banquemisr.challenge05 */;
-			targetProxy = E212BDA22BB30B3B00F4CA3B /* PBXContainerItemProxy */;
+			targetProxy = E2A5DF712BB7B2F300071F63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -603,15 +546,33 @@
 			};
 			name = Release;
 		};
-		E212BDAF2BB30B3B00F4CA3B /* Debug */ = {
+		E2A5DF742BB7B2F300071F63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.banquemisr-challenge05Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/banquemisr.challenge05.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/banquemisr.challenge05";
+			};
+			name = Debug;
+		};
+		E2A5DF752BB7B2F300071F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.banquemisr-challenge05Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,59 +580,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/banquemisr.challenge05.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/banquemisr.challenge05";
-			};
-			name = Debug;
-		};
-		E212BDB02BB30B3B00F4CA3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.banquemisr-challenge05Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/banquemisr.challenge05.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/banquemisr.challenge05";
-			};
-			name = Release;
-		};
-		E212BDB22BB30B3B00F4CA3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.banquemisr-challenge05UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = banquemisr.challenge05;
-			};
-			name = Debug;
-		};
-		E212BDB32BB30B3B00F4CA3B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.banquemisr-challenge05UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = banquemisr.challenge05;
 			};
 			name = Release;
 		};
@@ -696,20 +604,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E212BDAE2BB30B3B00F4CA3B /* Build configuration list for PBXNativeTarget "banquemisr.challenge05Tests" */ = {
+		E2A5DF732BB7B2F300071F63 /* Build configuration list for PBXNativeTarget "banquemisr.challenge05Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E212BDAF2BB30B3B00F4CA3B /* Debug */,
-				E212BDB02BB30B3B00F4CA3B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E212BDB12BB30B3B00F4CA3B /* Build configuration list for PBXNativeTarget "banquemisr.challenge05UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E212BDB22BB30B3B00F4CA3B /* Debug */,
-				E212BDB32BB30B3B00F4CA3B /* Release */,
+				E2A5DF742BB7B2F300071F63 /* Debug */,
+				E2A5DF752BB7B2F300071F63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

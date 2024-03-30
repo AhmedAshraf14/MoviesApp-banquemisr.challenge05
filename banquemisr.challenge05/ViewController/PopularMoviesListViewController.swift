@@ -39,7 +39,7 @@ class PopularMoviesListViewController: UIViewController {
     }
     
 }
-
+//MARK: - UICollectionViewDataSource
 extension PopularMoviesListViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return moviesListViewModel.numberOfMovies()
@@ -53,7 +53,7 @@ extension PopularMoviesListViewController: UICollectionViewDataSource{
         return cell
     }
 }
-
+//MARK: - UIcollectionViewDelegate
 extension PopularMoviesListViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movieId = moviesListViewModel.didSelectMovie(at: indexPath.item) else { return }

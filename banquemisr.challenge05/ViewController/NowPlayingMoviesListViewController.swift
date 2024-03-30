@@ -38,7 +38,7 @@ class NowPlayingMoviesListViewController: UIViewController {
     }
     
 }
-
+//MARK: - UICollectionViewDataSource
 extension NowPlayingMoviesListViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return moviesListViewModel.numberOfMovies()
@@ -53,7 +53,7 @@ extension NowPlayingMoviesListViewController: UICollectionViewDataSource{
     }
     
 }
-
+//MARK: - UIcollectionViewDelegate
 extension NowPlayingMoviesListViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let movieId = moviesListViewModel.didSelectMovie(at: indexPath.item) else { return }
