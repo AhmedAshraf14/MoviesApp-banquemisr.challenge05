@@ -10,16 +10,16 @@ import UIKit
 
 class MovieService{
     
-    static let shared = MovieService()
+    static var shared = MovieService()
     
-    private init() {}
-
+    init() {}
+    
     private let baseUrl = "https://api.themoviedb.org/3/movie/"
     private let apiKey = "95a89943de5af0ccb83f6a10a3c30c21"
     private let imageUrlHeader = "https://image.tmdb.org/t/p/"
     private let posterSize = "w500"
-
-
+    
+    
     func getMoviesList(currentTab: String,completion: @escaping (Result<[Movie], ErrorMessage>) -> Void){
         
         let urlString = baseUrl + "\(currentTab)?api_key=\(apiKey)"

@@ -10,7 +10,7 @@ import UIKit
 
 class MoviesListViewModel{
     
-    private var movies: [Movie] = []
+    var movies: [Movie] = []
     private var image = UIImage()
     
     var reloadCollectionView: (() -> Void)?

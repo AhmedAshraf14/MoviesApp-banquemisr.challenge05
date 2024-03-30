@@ -12,7 +12,7 @@ class MovieDetailsViewModel{
     
     private let movieID: Int!
     private var movie: MovieDetails!
-        
+    
     init(with movieID: Int?) {
         self.movieID = movieID
     }

@@ -21,7 +21,7 @@ class MovieDetailsViewController: UIViewController {
     let genresNameLabel = customSecondaryLabel(fontSize: 18, textAlignment: .left)
     let overviewLabel = customBodyLabel(textAlignment: .left)
     
-
+    
     var movieDetailsViewModel: MovieDetailsViewModel!
     
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class MovieDetailsViewController: UIViewController {
         view.backgroundColor = .systemGray6
         navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
         navigationController?.navigationBar.tintColor = UIColor.systemTeal
-
+        
         addSubViews()
         layoutUI()
         configureUIElemnts()
@@ -52,9 +52,9 @@ class MovieDetailsViewController: UIViewController {
                     }
                 }
             }
-
         }
     }
+    
     func addSubViews(){
         view.addSubview(movieImageView)
         view.addSubview(movieNameLabel)

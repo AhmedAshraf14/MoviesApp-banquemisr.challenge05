@@ -8,7 +8,7 @@
 import UIKit
 
 class UpcomingMoviesListViewController: UIViewController {
-
+    
     var collectionView : UICollectionView!
     var moviesListViewModel = MoviesListViewModel()
     

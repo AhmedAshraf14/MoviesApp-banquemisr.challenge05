@@ -8,8 +8,8 @@
 import XCTest
 @testable import banquemisr_challenge05
 
-final class MovieServiceTests: XCTestCase {
-
+class MovieServiceTests: XCTestCase {
+    
     func testGetMoviesListWithValidData() {
         MovieService.shared.getMoviesList(currentTab: "now_playing") { result in
             switch result {
@@ -20,7 +20,7 @@ final class MovieServiceTests: XCTestCase {
             }
         }
     }
-        
+    
     func testGetMoviesListWithInvalidURL() {
         MovieService.shared.getMoviesList(currentTab: "invalid_tab") { result in
             switch result {
@@ -32,7 +32,7 @@ final class MovieServiceTests: XCTestCase {
         }
     }
     
-    func testtestGetMovieDetailsWithValidData(){
+    func testGetMovieDetailsWithValidData(){
         MovieService.shared.getMovieDetails(for: 12345) { result in
             switch result{
             case .success(let movieDetails):
@@ -46,12 +46,12 @@ final class MovieServiceTests: XCTestCase {
     
     func testGetMovieDetailsWithInvalidMovieID() {
         MovieService.shared.getMovieDetails(for: -1) { result in
-               switch result {
-               case .success:
-                   XCTFail("Expected failure due to invalid movie ID")
-               case .failure(let errorMessage):
-                   XCTAssertNotNil(errorMessage, "Expected error should not be nil")
-               }
-           }
-       }
+            switch result {
+            case .success:
+                XCTFail("Expected failure due to invalid movie ID")
+            case .failure(let errorMessage):
+                XCTAssertNotNil(errorMessage, "Expected error should not be nil")
+            }
+        }
+    }
 }

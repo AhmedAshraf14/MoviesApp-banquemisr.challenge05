@@ -8,7 +8,7 @@
 import UIKit
 
 class PopularMoviesListViewController: UIViewController {
-
+    
     var collectionView : UICollectionView!
     var moviesListViewModel = MoviesListViewModel()
     
@@ -65,3 +65,4 @@ extension PopularMoviesListViewController: UICollectionViewDelegate{
         navigationController?.pushViewController(movieDetailsVC, animated: true)
     }
 }
+
