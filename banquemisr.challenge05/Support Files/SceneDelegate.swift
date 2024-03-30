@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createNowPlayingMoviesNC() -> UINavigationController{
         let nowPlayingMoviesVC = NowPlayingMoviesListViewController()
         nowPlayingMoviesVC.title = "Now Playing"
-        nowPlayingMoviesVC.tabBarItem = UITabBarItem(title: "Now Playing", image: nil, tag: 0)
+        nowPlayingMoviesVC.tabBarItem = UITabBarItem(title: "Now Playing", image: UIImage(systemName: "play.fill"), tag: 0)
         
         return UINavigationController(rootViewController: nowPlayingMoviesVC)
     }
@@ -33,7 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createPopularMoviesNC() -> UINavigationController{
         let popularMoviesNC = PopularMoviesListViewController()
         popularMoviesNC.title = "Popular"
-        popularMoviesNC.tabBarItem = UITabBarItem(title: "Popular", image: nil, tag: 1)
+        popularMoviesNC.tabBarItem = UITabBarItem(title: "Popular", image: UIImage(systemName: "bolt.fill"), tag: 1)
         
         return UINavigationController(rootViewController: popularMoviesNC)
     }
@@ -41,7 +41,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createUpcomingMoviesNC() -> UINavigationController{
         let upcomingMoviesNC = UpcomingMoviesListViewController()
         upcomingMoviesNC.title = "Upcoming"
-        upcomingMoviesNC.tabBarItem = UITabBarItem(title: "Upcoming", image: nil, tag: 2)
+        upcomingMoviesNC.tabBarItem = UITabBarItem(title: "Upcoming", image: UIImage(systemName: "text.insert"), tag: 2)
         
         return UINavigationController(rootViewController: upcomingMoviesNC)
     }

@@ -14,6 +14,7 @@ class MoviesListViewModel{
     private var image = UIImage()
     
     var reloadCollectionView: (() -> Void)?
+    var showError: ((String) -> Void)?
     
     func fetchMoviesList(currentTab: String){
         MovieService.shared.getMoviesList(currentTab: currentTab) { [weak self] result in
@@ -26,13 +27,14 @@ class MoviesListViewModel{
                 
             case .failure(let error):
                 print("error fetching movieslist \(error.localizedDescription)")
+                self.showError?(ErrorMessage.invalidRequest.rawValue)
             }
         }
     }
     
     func getMovieImage(posterPath: String, completion: @escaping (UIImage?) -> Void ){
         MovieService.shared.downloadImage(from: posterPath) { [weak self] result in
-            guard let _ = self else { return  }
+            guard let self = self else { return  }
             
             switch result{
             case .success(let image):
@@ -40,6 +42,7 @@ class MoviesListViewModel{
                 
             case .failure(let error):
                 print("error downloading image \(error.localizedDescription)")
+                self.showError?(ErrorMessage.invalidResponse.rawValue)
                 completion(nil)
             }
         }

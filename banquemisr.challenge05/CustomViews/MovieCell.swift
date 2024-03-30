@@ -39,6 +39,7 @@ class MovieCell: UICollectionViewCell {
         movieRelaseDateLabel.text = movie.releaseDate
     }
     
+    
     private func configureMovieImageView() {
         addSubview(movieImageView)
         

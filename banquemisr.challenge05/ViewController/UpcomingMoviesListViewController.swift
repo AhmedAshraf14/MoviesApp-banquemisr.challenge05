@@ -22,6 +22,11 @@ class UpcomingMoviesListViewController: UIViewController {
                 self?.collectionView.reloadData()
             }
         }
+        moviesListViewModel.showError = { [weak self] errorMessage in
+            DispatchQueue.main.async {
+                self?.presentErrorAlert(message: errorMessage)
+            }
+        }
     }
     
     func configureCollectionView() {
@@ -56,7 +61,7 @@ extension UpcomingMoviesListViewController: UICollectionViewDelegate{
         let movieDetailsViewModel = MovieDetailsViewModel(with: movieId)
         let movieDetailsVC = MovieDetailsViewController()
         movieDetailsVC.movieDetailsViewModel = movieDetailsViewModel
-
+        movieDetailsVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(movieDetailsVC, animated: true)
     }
 }

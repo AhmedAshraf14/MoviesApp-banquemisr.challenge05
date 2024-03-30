@@ -26,7 +26,10 @@ class MovieDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemGray6
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: nil)
+        navigationController?.navigationBar.tintColor = UIColor.systemTeal
+
         addSubViews()
         layoutUI()
         configureUIElemnts()
@@ -45,16 +48,13 @@ class MovieDetailsViewController: UIViewController {
                         self.runtimeLabel.text = "\(movieDetails.runtime) min"
                         self.revenueLabel.text = "Revenue: \(movieDetails.revenue)$"
                         self.overviewLabel.text = movieDetails.overview
-                        self.overviewLabel.numberOfLines = 6
-                        self.overviewLabel.tintColor = .secondaryLabel
                         self.genresNameLabel.text = self.movieDetailsViewModel.setGenres(from: movieDetails.genres)
-                        self.genresNameLabel.numberOfLines = 2
                     }
                 }
             }
+
         }
     }
-
     func addSubViews(){
         view.addSubview(movieImageView)
         view.addSubview(movieNameLabel)
@@ -70,6 +70,9 @@ class MovieDetailsViewController: UIViewController {
     func layoutUI(){
         let textImagePadding: CGFloat = 12
         rateImageView.translatesAutoresizingMaskIntoConstraints = false
+        self.overviewLabel.numberOfLines = 6
+        self.genresNameLabel.numberOfLines = 2
+        self.rateImageView.tintColor = .systemYellow
         
         NSLayoutConstraint.activate([
             movieImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
